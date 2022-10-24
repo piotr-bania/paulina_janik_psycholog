@@ -1,0 +1,133 @@
+@import '/styles/globals';
+
+// ------------------------------ Animated background ------------------------------
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+  }
+  
+  .background_blur {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .background_blur span {
+    width: 50vmin;
+    height: 50vmin;
+    border-radius: 50vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 1;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  
+  .background_blur span:nth-child(0) {
+    color: $blue;
+    opacity: 0.55;
+    top: 39%;
+    left: 4%;
+    animation-duration: 53s;
+    animation-delay: -446s;
+    transform-origin: -13vw -11vh;
+    box-shadow: 100vmin 0 12.707552825657217vmin currentColor;
+  }
+  .background_blur span:nth-child(1) {
+    color: $green;
+    opacity: 0.35;
+    top: 72%;
+    left: 30%;
+    animation-duration: 59s;
+    animation-delay: -226s;
+    transform-origin: -21vw 14vh;
+    box-shadow: -100vmin 0 12.93188544806183vmin currentColor;
+  }
+  .background_blur span:nth-child(2) {
+    color: $blue;
+    opacity: 0.55;
+    top: 37%;
+    left: 92%;
+    animation-duration: 103s;
+    animation-delay: -330s;
+    transform-origin: 13vw 0vh;
+    box-shadow: -100vmin 0 13.495007425336755vmin currentColor;
+  }
+  .background_blur span:nth-child(3) {
+    color: $green;
+    opacity: 0.35;
+    top: 48%;
+    left: 83%;
+    animation-duration: 63s;
+    animation-delay: -238s;
+    transform-origin: -15vw 15vh;
+    box-shadow: -100vmin 0 13.069871355827283vmin currentColor;
+  }
+  .background_blur span:nth-child(4) {
+    color: $blue;
+    opacity: 0.55;
+    top: 16%;
+    left: 29%;
+    animation-duration: 77s;
+    animation-delay: -399s;
+    transform-origin: -19vw -20vh;
+    box-shadow: 100vmin 0 12.575770270740385vmin currentColor;
+  }
+  .background_blur span:nth-child(5) {
+    color: $green;
+    opacity: 0.35;
+    top: 49%;
+    left: 79%;
+    animation-duration: 79s;
+    animation-delay: -313s;
+    transform-origin: -23vw 20vh;
+    box-shadow: -100vmin 0 12.805048544352559vmin currentColor;
+  }
+  .background_blur span:nth-child(6) {
+    color: $blue;
+    opacity: 0.55;
+    top: 98%;
+    left: 54%;
+    animation-duration: 63s;
+    animation-delay: -162s;
+    transform-origin: -14vw 25vh;
+    box-shadow: -100vmin 0 12.533844805187197vmin currentColor;
+  }
+  .background_blur span:nth-child(7) {
+    color: $green;
+    opacity: 0.35;
+    top: 44%;
+    left: 17%;
+    animation-duration: 48s;
+    animation-delay: -278s;
+    transform-origin: -23vw 25vh;
+    box-shadow: -100vmin 0 13.450621966273529vmin currentColor;
+  }
+  .background_blur span:nth-child(8) {
+    color: $blue;
+    opacity: 0.55;
+    top: 15%;
+    left: 82%;
+    animation-duration: 29s;
+    animation-delay: -275s;
+    transform-origin: 13vw 15vh;
+    box-shadow: 100vmin 0 12.907328733399655vmin currentColor;
+  }
+  .background_blur span:nth-child(9) {
+    color: $green;
+    opacity: 0.35;
+    top: 12%;
+    left: 92%;
+    animation-duration: 12s;
+    animation-delay: -40s;
+    transform-origin: -24vw -8vh;
+    box-shadow: 100vmin 0 13.138135190120195vmin currentColor;
+  }

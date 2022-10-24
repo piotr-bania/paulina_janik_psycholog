@@ -1,0 +1,64 @@
+@import '/styles/globals';
+
+// ------------------------------ Desktop ------------------------------
+@media screen and (min-width: 1024px) {
+    #navbar {
+        position: fixed;
+        background: linear-gradient(0deg, rgba(244, 246, 249, 0) 0%, $light 100%);
+        // box-shadow: 0 4px 30px rgba(244, 246, 249, 0.3);
+        // border: 1px solid rgba(244, 246, 249, 0.1);
+        // backdrop-filter: blur(5px);
+        width: 100%;
+        height: 127px;
+        top: 0;
+        z-index: 100;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% - 244px);
+        margin: auto;
+
+        header {
+            position: fixed;
+            width: calc(100% - 244px);
+            grid-column: 1 / 13;
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+                cursor: pointer;
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+
+                li {
+                    a {
+                        padding-right: 3vw;
+                        color: $grey;
+                        font-size: 20px;
+                        text-decoration: none;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            color: $green;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {}
